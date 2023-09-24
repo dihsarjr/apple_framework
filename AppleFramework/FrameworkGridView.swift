@@ -8,11 +8,47 @@
 import SwiftUI
 
 struct FrameworkGridView: View {
+    let columns: [GridItem] = [
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+    ]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            ScrollView{
+                LazyVGrid(columns:columns,content: {
+                    ForEach(MockData.frameworks, id: \.id){item in
+                        FrameworkTitleView(frameworks: item)
+                    }
+                })
+            }.navigationTitle("Apple Framework")
+            
+           
+        }
+        
     }
 }
 
 #Preview {
-    FrameworkGridView()
+    FrameworkGridView().preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
+}
+
+
+struct FrameworkTitleView: View{
+    var frameworks: Framework
+   
+    var body: some View {
+        VStack{
+            Image(frameworks.imageName)
+                .resizable()
+                .frame(width:80,height: 80)
+            Text(frameworks.name)
+                .font(.subheadline)
+                .fontWeight(.medium)
+                .scaledToFit()
+                .minimumScaleFactor(0.5)
+            
+        }.padding()
+    }
 }
