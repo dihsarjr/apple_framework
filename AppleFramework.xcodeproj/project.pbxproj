@@ -12,6 +12,7 @@
 		4CA52D922ABFEF4000FE3740 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CA52D912ABFEF4000FE3740 /* Preview Assets.xcassets */; };
 		4CA52D992ABFEFA900FE3740 /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA52D982ABFEFA900FE3740 /* Framework.swift */; };
 		4CA52D9B2ABFF27B00FE3740 /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA52D9A2ABFF27B00FE3740 /* FrameworkGridView.swift */; };
+		4CA52D9D2AC0207700FE3740 /* FrameworkDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA52D9C2AC0207700FE3740 /* FrameworkDetailedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		4CA52D912ABFEF4000FE3740 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4CA52D982ABFEFA900FE3740 /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
 		4CA52D9A2ABFF27B00FE3740 /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
+		4CA52D9C2AC0207700FE3740 /* FrameworkDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				4CA52D8E2ABFEF4000FE3740 /* Assets.xcassets */,
 				4CA52D902ABFEF4000FE3740 /* Preview Content */,
 				4CA52D982ABFEFA900FE3740 /* Framework.swift */,
+				4CA52D9C2AC0207700FE3740 /* FrameworkDetailedView.swift */,
 			);
 			path = AppleFramework;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 				4CA52D9B2ABFF27B00FE3740 /* FrameworkGridView.swift in Sources */,
 				4CA52D992ABFEFA900FE3740 /* Framework.swift in Sources */,
 				4CA52D8B2ABFEF3F00FE3740 /* AppleFrameworkApp.swift in Sources */,
+				4CA52D9D2AC0207700FE3740 /* FrameworkDetailedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
